@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
+import { Button } from 'antd'
+import Layout from "./Layout";
 
 const Home: NextPage = () => {
   return (
     <div>
-        <Link href="/home">
-          <a>Back to home</a>
-        </Link>
+        <Layout/>
     </div>
   )
 }
