@@ -15,6 +15,11 @@ const Layout: React.FC = () => {
                     <Button type="primary">Back to about</Button>
                 </Link>
             </p>
+            <p>
+                <Link href="/login">
+                    <Button type="primary">Back to login</Button>
+                </Link>
+            </p>
         </div>
     )
 };
