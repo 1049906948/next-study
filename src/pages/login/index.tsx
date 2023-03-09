@@ -4,13 +4,10 @@ import styles from './index.module.css';
 
 const Login: React.FC = () => {
     const myRef: any = useRef();
-    // const navigate:any = useNavigate()
     const onSubmit = (e: any) => {
         e.preventDefault();
         myRef.current.validateFields().then((res: any) => {
             console.log(res)
-            // navigate("/")
-            // \3123123
         }).catch((err: any) => {
             console.log(err)
             message.error('登录失败!').then(r =>console.log(r,'123132') );
