@@ -10,6 +10,7 @@ const Login: React.FC = () => {
         myRef.current.validateFields().then((res: any) => {
             console.log(res)
             // navigate("/")
+            // \3123123
         }).catch((err: any) => {
             console.log(err)
             message.error('登录失败!').then(r =>console.log(r,'123132') );
