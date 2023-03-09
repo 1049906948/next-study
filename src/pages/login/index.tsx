@@ -1,13 +1,17 @@
 import React, {useRef} from 'react';
 import {Form, Input, Button, message} from 'antd';
 import styles from './index.module.css';
+import { useRouter } from 'next/router'
 
 const Login: React.FC = () => {
     const myRef: any = useRef();
+    const router = useRouter();
+
     const onSubmit = (e: any) => {
         e.preventDefault();
         myRef.current.validateFields().then((res: any) => {
             console.log(res)
+            router.push("/home")
         }).catch((err: any) => {
             console.log(err)
             message.error('登录失败!').then(r =>console.log(r,'123132') );
